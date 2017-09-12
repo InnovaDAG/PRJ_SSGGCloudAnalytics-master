@@ -1,0 +1,49 @@
+﻿<div class="row">
+    @if (Request.IsAuthenticated)
+    {
+        <text>
+
+    <div class="row">
+        <div class="invdg_ui_btn_05 ">
+            <a href='@Url.Action( "SignOut", "Account", new { Area = "" }, null)'>
+                <img class="btn_ui_img" src="~/Images/iconos/invdg_btn_pbi_out_c.png"
+                     onmouseover="this.src = '../Images/iconos/invdg_btn_pbi_out_d.png'"
+                     onmouseout="this.src = '../Images/iconos/invdg_btn_pbi_out_c.png'" />
+                <h1 class="invdg_txt_color_01">@Resources.Monitoring_Acces.language._Btn_Logout_tx_01</h1>
+            </a>
+            <div class="invdg_contenedor_01 ">
+                <h2 class="invdg_txt_color_04">@Resources.Monitoring_Acces.language._Btn_Logout_tx_03</h2>
+
+                <h1 class="invdg_txt_color_01">@Resources.Monitoring_Acces.language._Btn_Logout_tx_02</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+
+        </text>
+    }
+    else
+    {
+
+        <div class="row">
+            <div class="invdg_ui_btn_05 ">
+                <a href='@Url.Action( "SignIn", "Account", new { Area = "" }, null)'>
+                    <img class="btn_ui_img" src="~/Images/iconos/invdg_btn_pbi_in_c.png"
+                         onmouseover="this.src = '../Images/iconos/invdg_btn_pbi_in_d.png'"
+                         onmouseout="this.src = '../Images/iconos/invdg_btn_pbi_in_c.png'" />
+                    <h1 class="invdg_txt_color_01">@Resources.Monitoring_Acces.language._Btn_Acces_tx_01</h1>
+                </a>
+                <div class="invdg_contenedor_01 ">
+                    <h1 class="invdg_txt_color_04">@Resources.Monitoring_Acces.language._Btn_Acces_tx_02</h1>
+                    <h2 class="invdg_txt_color_01">@Resources.Monitoring_Acces.language._Btn_Acces_tx_03</h2>
+                </div>
+
+            </div>
+        </div>
+
+
+    }
+
+</div>

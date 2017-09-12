@@ -1,0 +1,59 @@
+﻿/*----------------PARTE RESPONSIVA----------------------*/
+
+/*----------------MOBILES Vertical---------------------*/
+
+@media (max-width: 479px) {
+
+
+
+
+
+}
+    /*----------------MOBILES---------------------*/
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .ssgg_img_type_a {
+        padding: 5px;
+        width: 110%;
+    }
+
+}
+
+/*----------------TABLEST---------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+    .ssgg_img_type_a {
+        padding: 10px;
+        width: 120%;
+    }
+
+
+}
+
+/*----------------PANTALLA MEDIA---------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+    .ssgg_img_type_a {
+        padding: 10px;
+        width: 100%;
+    }
+
+}
+
+
+/*----------------PANTALLA GRANDE---------------------*/
+@media (min-width: 1200px) {
+
+
+
+
+
+
+
+}

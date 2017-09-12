@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="News_Title_tx_01" xml:space="preserve">
+    <value>Espacio de informacion y novedades. Tus Newsletters</value>
+  </data>
+  <data name="News_Title_tx_02" xml:space="preserve">
+    <value>Manten al dia tu informacion, suscribete a nuestra newsletter mensual y recibiras las noticias mas relevantes del sector.</value>
+  </data>
+  <data name="Serv_Area_Title_tx_01" xml:space="preserve">
+    <value>Servicios Gestionados Ambitos de Actuacion</value>
+  </data>
+  <data name="Serv_Area_Title_tx_01_lr" xml:space="preserve">
+    <value>Ambitos de Actuacion</value>
+  </data>
+  <data name="Serv_Area_Title_tx_02" xml:space="preserve">
+    <value>Buscamos resolver sus necesidades, enfocamos nuestros esfuerzos en la optimizacion de sus activos.</value>
+  </data>
+  <data name="Serv_Azure_Title_tx_01" xml:space="preserve">
+    <value>Ámbito Servicios Gestionados Azure</value>
+  </data>
+  <data name="Serv_Azure_Title_tx_01_lr" xml:space="preserve">
+    <value>Ámbito SsGg Azure</value>
+  </data>
+  <data name="Serv_Azure_Title_tx_02" xml:space="preserve">
+    <value>IaaS y PaaS</value>
+  </data>
+  <data name="Serv_Azure_Title_tx_03" xml:space="preserve">
+    <value>TITULAR ARGUMENTO DE VENTA</value>
+  </data>
+  <data name="Serv_Azure_txt_01" xml:space="preserve">
+    <value>El ámbito de la prestación del servicio Gestionado Azure abarca los  servicios IaaS y PaaS  y responde a la operación de los diferentes servicios como plataforma entregados por Azure (https://azure.microsoft.com/es-es/services/).</value>
+  </data>
+  <data name="Serv_Azure_txt_02" xml:space="preserve">
+    <value>En general el servicio abarca todo lo que se pueda realizar con el acceso a la subscripción y portal de Azure pero no a los S.O. y aplicaciones que puedan residir en las máquinas.</value>
+  </data>
+  <data name="Serv_Azure_txt_03" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Serv_Backuplus_Title_tx_01" xml:space="preserve">
+    <value>Servicios Backup Plus</value>
+  </data>
+  <data name="Serv_Backuplus_Title_tx_01_lr" xml:space="preserve">
+    <value>Servicios Backup Plus</value>
+  </data>
+  <data name="Serv_Backuplus_Title_tx_02" xml:space="preserve">
+    <value>Tus aplicaciones OnPremise con la seguridad de la nube</value>
+  </data>
+  <data name="Serv_Backuplus_txt_01" xml:space="preserve">
+    <value>-Externalización - Protección off-site del dato on premise.
+-Backup Eficiente.
+-Agente de Backup para entornos Microsoft a través de software del fabricante CloudBerry.
+-Recuperación desde la nube</value>
+  </data>
+  <data name="Serv_Backuplus_txt_02" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Serv_Backuplus_txt_03" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Serv_CAC_Title_tx_01" xml:space="preserve">
+    <value>Centro de Atencion al Cliente</value>
+  </data>
+  <data name="Serv_CAC_Title_tx_01_lr" xml:space="preserve">
+    <value>Centro de Atencion al Cliente</value>
+  </data>
+  <data name="Serv_CAC_Title_tx_02" xml:space="preserve">
+    <value>Soporte tecnico profesional</value>
+  </data>
+  <data name="Serv_CAC_txt_01" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Serv_CAC_txt_02" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Serv_Com_Sec_Title_tx_01" xml:space="preserve">
+    <value>Servicios de comunicaciones y seguridad</value>
+  </data>
+  <data name="Serv_Com_Sec_Title_tx_01_lr" xml:space="preserve">
+    <value>Comunicacion y Seguridad</value>
+  </data>
+  <data name="Serv_Com_Sec_Title_tx_02" xml:space="preserve">
+    <value>TITULAR ARGUMENTO DE VENTA</value>
+  </data>
+  <data name="Serv_Com_Sec_txt_01" xml:space="preserve">
+    <value>TEXTO ARGUMENTO DE VENTA</value>
+  </data>
+  <data name="Serv_Dynam_Title_tx_01" xml:space="preserve">
+    <value>Ámbito Servicios Gestionados Dynamics 365</value>
+  </data>
+  <data name="Serv_Dynam_Title_tx_01_lr" xml:space="preserve">
+    <value>Ámbito SsGg Dynamics 365</value>
+  </data>
+  <data name="Serv_Dynam_Title_tx_02" xml:space="preserve">
+    <value>Soporte en plataforma de aplicaciones comunes.</value>
+  </data>
+  <data name="Serv_Dynam_txt_01" xml:space="preserve">
+    <value>Microsoft Dynamics 365 le da libertad de elección ya que dispone de aplicaciones empresariales inteligentes de CRM y ERP. Empiece sólo con lo que necesite para dirigir su negocio e impresione a sus clientes. Añada aplicaciones a medida que cambien sus necesidades.
+Cada aplicación resuelve problemas reales y aporta valor real. Pero si las combina, obtendrá la potencia y las posibilidades adecuadas para transformar su negocio.</value>
+  </data>
+  <data name="Serv_Dynam_txt_02" xml:space="preserve">
+    <value>Mejore sus decisiones con datos. Al integrar Microsoft Power BI, Cortana Intelligence y Azure Machine Learning, Dynamics 365 le ayuda a usted y a sus empleados a convertir Big Data en planes viables.</value>
+  </data>
+  <data name="Serv_O365_Title_tx_01" xml:space="preserve">
+    <value>Ámbito Servicios Gestionados O365</value>
+  </data>
+  <data name="Serv_O365_Title_tx_01_lr" xml:space="preserve">
+    <value>Ámbito SsGg Office 365</value>
+  </data>
+  <data name="Serv_O365_Title_tx_02" xml:space="preserve">
+    <value>Adecuaciones y cambios para optimizar las necesidades.</value>
+  </data>
+  <data name="Serv_O365_Title_tx_03" xml:space="preserve">
+    <value>Office donde y cuando lo necesites</value>
+  </data>
+  <data name="Serv_O365_txt_01" xml:space="preserve">
+    <value>Cuando trabajes en la oficina o durante los desplazamientos, tienes un conjunto de herramientas de productividad conocida y de primera clase. Las aplicaciones de Office (siempre la versión más reciente) te permiten crear, editar y compartir con cualquier persona y en tiempo real, desde tu equipo PC o Mac, o desde cualquier Dispositivo iOS, Android™ o Windows</value>
+  </data>
+  <data name="Serv_O365_txt_02" xml:space="preserve">
+    <value>Personaliza las direcciones de correo electrónico de categoría empresarial con el nombre de tu empresa para conseguir el reconocimiento de la marca y promociona el negocio con materiales de marketing personalizados y fáciles de crear. Mejora las relaciones con los clientes y compañeros de trabajo con una amplia variedad de herramientas de comunicación, desde correo electrónico y mensajería instantánea a redes sociales videoconferencia.</value>
+  </data>
+</root>

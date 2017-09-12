@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Serv_Cloud_Title_txSub_01" xml:space="preserve">
+    <value>¿Cómo podemos ayudarle?</value>
+  </data>
+  <data name="Serv_Cloud_Title_txSub_02" xml:space="preserve">
+    <value>Visión de nuestros Servicios Gestionados Cloud</value>
+  </data>
+  <data name="Serv_Cloud_Title_txSub_03" xml:space="preserve">
+    <value>¿Cual es el alcance de nuestros servicios?</value>
+  </data>
+  <data name="Serv_Cloud_Title_txSub_04" xml:space="preserve">
+    <value>Marco del servicio Gestionado</value>
+  </data>
+  <data name="Serv_Cloud_Title_txSub_05" xml:space="preserve">
+    <value>Soporte Servicios Gestionados</value>
+  </data>
+  <data name="Serv_Cloud_Title_txSub_06" xml:space="preserve">
+    <value>Fuera de Alcance</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_01" xml:space="preserve">
+    <value>Servicios Gestionados Cloud</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_01_lr" xml:space="preserve">
+    <value>Servicios Gestionados Cloud</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_02" xml:space="preserve">
+    <value>Gestión y administración. Operación. Soporte. Gestión del cambio.</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03" xml:space="preserve">
+    <value>Clientes vs Cloud</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_a" xml:space="preserve">
+    <value>Cloud
+Iaas  PaaS
+SaaS</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_b" xml:space="preserve">
+    <value>Cómo creo máquinas?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_c" xml:space="preserve">
+    <value>Cuál me conviene más?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_d" xml:space="preserve">
+    <value>Qué tipos hay?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_e" xml:space="preserve">
+    <value>Me sale a Cuenta?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_f" xml:space="preserve">
+    <value>Estoy preparado?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_g" xml:space="preserve">
+    <value>Qué es el Cloud?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_h" xml:space="preserve">
+    <value>Cómo gestiono las identidades?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_i" xml:space="preserve">
+    <value>Cómo puedo ir?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_j" xml:space="preserve">
+    <value>Están a salvo mis datos?</value>
+  </data>
+  <data name="Serv_Cloud_Title_tx_03_k" xml:space="preserve">
+    <value>Pueden convivir mis sistemas con el Cloud?</value>
+  </data>
+  <data name="Serv_Cloud_txt_01" xml:space="preserve">
+    <value>TEXTO ARGUMENTO DE VENTA</value>
+  </data>
+  <data name="Serv_Cloud_txt_02" xml:space="preserve">
+    <value>TEXTO ARGUMENTO DE VENTA</value>
+  </data>
+  <data name="Serv_Cloud_txt_03" xml:space="preserve">
+    <value>TEXTO ARGUMENTO DE VENTA</value>
+  </data>
+  <data name="Serv_Cloud_txt_04" xml:space="preserve">
+    <value>·Aportando nuestra experiencia en estos entornos. La mayoría de las empresas que inician el cambio al Cloud no tiene técnicos formados.
+·Dando soporte a las incidencias que puedan producirse.
+·Asesorándole en la reducción de costes en la nube.
+·Liberando a su plantilla de la gestión adminstrativa y operativa.
+·Gestionando las consultas e incidencias, incluido el escalado al fabricante.</value>
+  </data>
+  <data name="Serv_Cloud_txt_05" xml:space="preserve">
+    <value>·Asesoramiento: Nos queremos asegurar de que su experiencia en el cloud sea óptima. Para ello nos centraremos en las tareas relacionadas con el correcto aprovechamiento de las posibilidades que ofrece la nube en respuesta a las necesidades de su organización.
+·Apoyo en la gestión del cambio. Portal formativo en O365.
+·Nuestro equipo técnico realizará los cambios y gestionará las posibles incidencias desde el punto de vista técnico y administrativo siguiendo las directrices que nos marque descargando a su empresa de dichas tareas y dando soporte a sus técnicos.
+·La colaboración global en el servicio, tanto con terceras partes que puedan estar dando otros servicios de soporte TI o como suministradores de parte de la infraestructura que Vd posee en la actualidad.
+·Soporte de segundo nivel ante incidencias y escalado de tercer nivel con el fabricante.
+·Aproximación Modular por ámbitos que el Cliente puede contratar conjuntamente o por separado.</value>
+  </data>
+  <data name="Serv_Cloud_txt_06" xml:space="preserve">
+    <value>El servicio se basa en cuatro módulos que se aplican en función del ámbito contratado:
+·Gestión y administración, correspondiente a la parte de gestión administrativa propias de los portales según ámbito.
+·Operación, entendiéndose como la ejecución de los cambios que requiera el mantenimiento operativo del servicio dentro del ámbito contratado.
+·Soporte, en sus vertientes reactiva y de asesoramiento, con niveles de escalado 1 y 2 de InnovaDAG y 3 directamente del fabricante. 
+·Gestión del cambio (sólo para Office 365), formación a través de un portal y transferencia de conocimiento.
+Se contempla el aprovisionamiento y configuración para la puesta en marcha del servicio (para Dynamics  sólo se contempla la puesta en marcha de Dynamics CRM). 
+Queda incluida dentro del ámbito de Servicios Gestionados de Azure la parte de soporte de configuración de comunicaciones del Cloud.</value>
+  </data>
+  <data name="Serv_Cloud_txt_07" xml:space="preserve">
+    <value>El servicio de Centro de atención a cliente, proporciona el punto de contacto inicial (para usuarios registrados seleccionados por el cliente) de la petición o incidencia en un formato 24*7 para incidencias y 12*8 para peticiones y cambios tanto en castellano como en inglés. Este servicio utiliza un software de registro de tickets basado en estándares (SAP).
+Este servicio incluye un contacto de Service Manager global del servicio que proporciona responsabilidad y gestión sobre el mismo.
+Hay otras modalidades de contratación que amplían el alcance del servicio de soporte según el ámbito contratado con parcial o total FTE/Mes que deben ser acordadas:
+·Gestor de servicios de la Nube nominal
+·Arquitecto de servicios en la nube
+·Operaciones de TI cuyo objetivo es realizar tareas personalizadas en nombre del cliente, con dedicación parcial (Horas/Mes)</value>
+  </data>
+  <data name="Serv_Cloud_txt_08" xml:space="preserve">
+    <value>El soporte se realizará ofreciendo:
+
+·Diagnóstico remoto.
+·Solución remota y restitución de la operativa, siempre y cuando nos autorice el Cliente y los procesos de actuación estén debidamente documentados.
+·Resolución de Consultas, atendiendo cuestiones técnicas y funcionales partiendo de las mejores prácticas y recomendaciones del fabricante.
+·Resolución de Incidencias según prioridad y protocolo de actuación.
+·Escalado a equipos de soporte on-site de nivel 2 o terceros.
+·Escalado a 3er nivel (fabricante) en caso de dificultad en el diagnóstico o la resolución.
+·Detección y comunicación de problemas.</value>
+  </data>
+  <data name="Serv_Cloud_txt_09" xml:space="preserve">
+    <value>·No se considerarán dentro del alcance la transformación de servicios, ni la migración de datos (movimiento de un servicio hacia Office 365 o la implantación de soluciones híbridas). 
+·Administración o intervención sobre dispositivos o servicios On Premise como extremos de VPN o servicios de aplicaciones.
+·Instalación/remediación/homologación de cualquier aplicación tanto del Cliente como de terceros para adaptarla a la nueva plataforma/sistema.
+·Upgrade de versiones del Directorio Activo o cualquier otro componente de la infraestructura del Cliente.
+·Instalación o cambio de configuración de dispositivos de red (switches, balanceadores hardware, routers, firewalls, etc.).
+·La integración con sistemas de monitorización o reporte.
+·Gestión del cambio i/o comunicaciones a usuarios finales.
+·Cualquier alcance que deba contemplar la parte On-Premise deberá ser valorada de manera independiente.</value>
+  </data>
+</root>

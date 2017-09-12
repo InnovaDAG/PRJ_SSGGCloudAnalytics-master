@@ -1,0 +1,104 @@
+﻿/*---------------------BEBAS NEUE---------------------*/
+
+@font-face {
+    font-family: 'bebasneue-webfont';
+    src: url('../fonts/bebasneue/bebasneue-webfont.eot') format('embedded-opentype'), url('../fonts/bebasneue/bebasneue-webfont.svg') format('svg'), url('../fonts/bebasneue/bebasneue-webfont.ttf') format('truetype'), url('../fonts/bebasneue/bebasneue-webfont.woff') format('woff');
+}
+/*---------------------FIN----BEBAS NEUE---------------------*/
+
+/*------------------CANTARELL----------------------*/
+@font-face {
+    font-family: 'cantarell-bold-webfont';
+    src: url('../fonts/cantarell/cantarell-bold-webfont.eot') format('embedded-opentype'), url('../fonts/cantarell/cantarell-bold-webfont.ttf') format('truetype'), url('../fonts/cantarell/cantarell-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'cantarell-regular-webfont';
+    src: url('../fonts/cantarell/cantarell-regular-webfont.eot') format('embedded-opentype'), url('../fonts/cantarell/cantarell-regular-webfont.ttf') format('truetype'), url('../fonts/cantarell/cantarell-regular-webfont.woff') format('woff');
+}
+
+/*------------------FIN---CANTARELL----------------------*/
+
+
+
+
+
+
+/*---------------------ISTOKWEB----------------------*/
+@font-face {
+    font-family: 'istokweb-bold-webfont';
+    src: url('../fonts/Istokweb/istokweb-bold-webfont.eot') format('embedded-opentype'), url('../fonts/Istokweb/istokweb-bold-webfont.ttf') format('truetype'), url('../fonts/Istokweb/istokweb-bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'istokweb-regular-webfont';
+    src: url('../fonts/Istokweb/istokweb-regular-webfont.eot') format('embedded-opentype'), url('../fonts/Istokweb/istokweb-regular-webfont.ttf') format('truetype'), url('../fonts/Istokweb/istokweb-regular-webfont.woff') format('woff');
+}
+
+/*----------------FIN ------ISTOKWEB----------------------*/
+
+
+
+/*--------------------MICHROMA----------------------*/
+
+@font-face {
+    font-family: 'michroma-webfont-webfont';
+    src: url('../fonts/michroma/michroma-webfont-webfont.eot') format('embedded-opentype'), url('../fonts/michroma/michroma-webfont-webfont.ttf') format('truetype'), url('../fonts/michroma/michroma-webfont-webfont.woff') format('woff');
+}
+/*------------------FIN---MICHROMA----------------------*/
+
+
+/*---------------------OPEN SANS----------------------*/
+@font-face {
+    font-family: 'OpenSans-Bold-webfont';
+    src: url('../fonts/OpenSans/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Bold-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Bold-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-Bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic-webfont';
+    src: url('../fonts/OpenSans/OpenSans-BoldItalic-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-BoldItalic-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-BoldItalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold-webfont';
+    src: url('../fonts/OpenSans/OpenSans-ExtraBold-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-ExtraBold-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-ExtraBold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBoldItalic-webfont';
+    src: url('../fonts/OpenSans/OpenSans-ExtraBoldItalic-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-ExtraBoldItalic-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-ExtraBoldItalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic-webfont';
+    src: url('../fonts/OpenSans/OpenSans-Italic-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Italic-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Italic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-Light-webfont';
+    src: url('../fonts/OpenSans/OpenSans-Light-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Light-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-LightItalic-webfont';
+    src: url('../fonts/OpenSans/OpenSans-LightItalic-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-LightItalic-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-LightItalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular-webfont';
+    src: url('../fonts/OpenSans/OpenSans-Regular-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold-webfont';
+    src: url('../fonts/OpenSans/OpenSans-Semibold-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Semibold-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-Semibold-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiboldItalic-webfont';
+    src: url('../fonts/OpenSans/OpenSans-SemiboldItalic-webfont.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-SemiboldItalic-webfont.svg') format('svg'), url('../fonts/OpenSans/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-SemiboldItalic-webfont.woff') format('woff');
+}
+
+/*------------------FIN---OPEN SANS----------------------*/
+
+
+

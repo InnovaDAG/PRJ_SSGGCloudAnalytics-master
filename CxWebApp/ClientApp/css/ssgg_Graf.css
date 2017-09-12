@@ -1,0 +1,167 @@
+﻿
+/*Ejer ---- 1------------------------*/
+/*.grafico div {
+font: 10px sans-serif;
+background-color: steelblue;
+text-align: right;
+padding: 3px;
+margin: 1px;
+color: white;
+}
+
+.chart div {
+font: 10px sans-serif;
+background-color: steelblue;
+text-align: right;
+padding: 3px;
+margin: 1px;
+color: white;
+}*/
+
+
+/*Ejer ---- 2----------------------*/
+.barrahorsgv rect {
+fill: steelblue;
+}
+
+.barrahorsgv text {
+fill: white;
+font: 18px sans-serif;
+text-anchor: end;
+}
+
+svg {
+
+width:auto;
+/*background-color:#f4f7fb;*/
+padding:5px;
+margin:2px;
+border-radius:6px;
+
+}
+
+
+#pos_graf_a01 div{
+font: 15px sans-serif;
+text-align: right;
+padding: 5px;
+margin: 5px;
+color: white;
+background-color:rgba(28, 54, 71, 1);
+}
+
+#pos_graf_a02 div{
+font: 15px sans-serif;
+text-align: right;
+padding: 5px;
+margin: 1px;
+color: white;
+background-color:#38558a;
+}
+.barra{
+width:25px;
+height:100px;
+margin-right:2px;
+display:inline-block;
+
+}
+
+#pos_graf_a03 svg {
+font: 20px sans-serif;
+width:100%;
+min-height:200px;
+background-color:#f4f7fb;
+}
+
+
+
+#pos_graf_a03 svg > circle{
+     fill:#38558a;
+     stroke: rgba(28, 54, 71, 1);
+     stroke-width:2px;
+}
+
+
+#pos_graf_a04 svg {
+font: 20px sans-serif;
+width:100%;
+min-height:200px;
+background-color:#f4f7fb;
+}
+
+#pos_graf_a04 svg > rect {
+    fill:rgba(28, 54, 71, 1);
+}
+
+#pos_graf_a04 svg > text {
+font-family: 'OpenSans-Regular-webfont';
+line-height:18px;
+font-weight:100;
+font-size:18px;
+text-align:center;
+
+color:#38558a;
+
+}
+
+
+
+
+
+
+
+#graf_anali_A01_01 rect {
+  fill: #38558a;
+}
+
+/* text-anchor: start/middle/end; */
+  
+#graf_anali_A01_01 text {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: middle;
+}
+
+#graf_anali_A02_01 .bar {
+        fill: #38558a;
+        margin-left:2px;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+/*GRAFICO LINEAS TIPO A, CURVA DE TIEMPO CON PERSONALIZACION COLORES EJES...*/
+
+
+
+
+
+
+
+
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+
+
+

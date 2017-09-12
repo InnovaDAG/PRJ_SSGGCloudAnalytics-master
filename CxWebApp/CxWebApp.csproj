@@ -1,0 +1,590 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\components\AzureOvrvw.tsx" />
+    <None Remove="ClientApp\components\charts\SsggChart_Bar_A02.tsx" />
+    <None Remove="ClientApp\components\Counter.tsx" />
+    <None Remove="ClientApp\components\FetchData.tsx" />
+    <None Remove="ClientApp\components\Header.tsx" />
+    <None Remove="ClientApp\components\News.tsx" />
+    <None Remove="ClientApp\components\panels\AmazonIndex.tsx" />
+    <None Remove="ClientApp\components\panels\AmazonOverview.tsx" />
+    <None Remove="ClientApp\components\panels\AzureIndex.tsx" />
+    <None Remove="ClientApp\components\panels\AzureResources.tsx" />
+    <None Remove="ClientApp\components\panels\AzureSubscriptions.tsx" />
+    <None Remove="ClientApp\components\charts\SsggChart_Bar_A01.tsx" />
+    <None Remove="ClientApp\components\panels\CloudComparatives.tsx" />
+    <None Remove="ClientApp\components\panels\ConsumptionAnalysis.tsx" />
+    <None Remove="ClientApp\components\panels\ExpenseAnalysis.tsx" />
+    <None Remove="ClientApp\components\panels\GCloudIndex.tsx" />
+    <None Remove="ClientApp\components\panels\GCloudOverview.tsx" />
+    <None Remove="ClientApp\components\panels\GeneralPosition.tsx" />
+    <None Remove="ClientApp\components\panels\GSuiteIndex.tsx" />
+    <None Remove="ClientApp\components\panels\GSuiteOverview.tsx" />
+    <None Remove="ClientApp\components\panels\ManagementAnalysis.tsx" />
+    <None Remove="ClientApp\components\panels\Office365Applications.tsx" />
+    <None Remove="ClientApp\components\panels\Office365Index.tsx" />
+    <None Remove="ClientApp\components\panels\Office365Licenses.tsx" />
+    <None Remove="ClientApp\components\panels\Office365Overview.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Gen.language.resx" />
+    <Content Include="App_GlobalResources\Graphics.language.resx" />
+    <Content Include="App_GlobalResources\Mnu.language.resx" />
+    <Content Include="App_GlobalResources\Monitoring.language.resx" />
+    <Content Include="App_GlobalResources\Monitoring_Acces.language.resx" />
+    <Content Include="App_GlobalResources\Services.language.resx" />
+    <Content Include="App_GlobalResources\Serv_Cloud.language.resx" />
+    <Content Include="ClientApp\css\ssgg_Fonts.css" />
+    <Content Include="ClientApp\css\ssgg_Gen.css" />
+    <Content Include="ClientApp\css\ssgg_Graf.css" />
+    <Content Include="ClientApp\css\ssgg_Mnu.css" />
+    <Content Include="ClientApp\css\ssgg_Responsiv.css" />
+    <Content Include="ClientApp\css\ssgg_Txt.css" />
+    <Content Include="ClientApp\fonts\BebasNeue\BebasNeue-webfont.eot" />
+    <Content Include="ClientApp\fonts\BebasNeue\BebasNeue-webfont.svg" />
+    <Content Include="ClientApp\fonts\BebasNeue\BebasNeue-webfont.ttf" />
+    <Content Include="ClientApp\fonts\BebasNeue\BebasNeue-webfont.woff" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-bold-demo.html" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-bold-webfont.eot" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-bold-webfont.ttf" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-bold-webfont.woff" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-regular-demo.html" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-regular-webfont.eot" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-regular-webfont.ttf" />
+    <Content Include="ClientApp\fonts\Cantarell\cantarell-regular-webfont.woff" />
+    <Content Include="ClientApp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="ClientApp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ClientApp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="ClientApp\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="ClientApp\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Bd.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Bd.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Bd.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Bd.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Bd.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Bd.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdCnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdEx.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdEx.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdEx.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdEx.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdEx.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdEx.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdIt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdIt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdIt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdIt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdIt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdIt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdOu.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdOu.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdOu.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdOu.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdOu.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BdOu.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Blk.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Blk.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Blk.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Blk.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Blk.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Blk.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkCnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkEx.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkEx.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkEx.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkEx.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkEx.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkEx.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkIt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkIt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkIt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkIt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkIt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-BlkIt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Cn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Cn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Cn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Cn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Cn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Cn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-CnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-CnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-CnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-CnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-CnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-CnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Ex.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Ex.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Ex.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Ex.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Ex.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Ex.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Hv.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Hv.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Hv.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Hv.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Hv.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Hv.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvCnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvEx.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvEx.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvEx.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvEx.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvEx.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvEx.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvIt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvIt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvIt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvIt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvIt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-HvIt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-It.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-It.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-It.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-It.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-It.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-It.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Lt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Lt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Lt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Lt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Lt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Lt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtCnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\helveticaneueltstd-ltex-webfont.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtEx.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtEx.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtEx.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtEx.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtEx.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtEx.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtIt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtIt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtIt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtIt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtIt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-LtIt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Md.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdCnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdEx.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdEx.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdEx.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdEx.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdEx.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdEx.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdIt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdIt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdIt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdIt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdIt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-MdIt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Roman.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Roman.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Roman.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Roman.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Roman.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Roman.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Th.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Th.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Th.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Th.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Th.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-Th.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThCnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThEx.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThEx.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThEx.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThEx.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThEx.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThEx.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThIt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThIt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThIt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThIt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThIt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-ThIt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtCnO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtEx.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtEx.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtEx.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtEx.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtEx.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtEx.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtExO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtExO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtExO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtExO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtExO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtExO.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtIt.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtIt.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtIt.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtIt.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtIt.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-UltLtIt.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCn.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCn.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCn.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCn.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCn.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCn.woff2" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCnO.eot" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCnO.otf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCnO.svg" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCnO.ttf" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCnO.woff" />
+    <Content Include="ClientApp\fonts\HelveticaNeue\HelveticaNeueLTStd-XBlkCnO.woff2" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-bold-demo.html" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-bold-webfont.eot" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-bold-webfont.ttf" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-bold-webfont.woff" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-regular-demo.html" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-regular-webfont.eot" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-regular-webfont.ttf" />
+    <Content Include="ClientApp\fonts\Istokweb\istokweb-regular-webfont.woff" />
+    <Content Include="ClientApp\fonts\Michroma\michroma-webfont-demo.html" />
+    <Content Include="ClientApp\fonts\Michroma\michroma-webfont-webfont.eot" />
+    <Content Include="ClientApp\fonts\Michroma\michroma-webfont-webfont.ttf" />
+    <Content Include="ClientApp\fonts\Michroma\michroma-webfont-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Bold-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Bold-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Bold-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Bold-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-BoldItalic-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-BoldItalic-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-BoldItalic-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-BoldItalic-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBold-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBold-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBold-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBold-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBoldItalic-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBoldItalic-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBoldItalic-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-ExtraBoldItalic-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Italic-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Italic-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Italic-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Italic-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Light-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Light-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Light-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Light-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-LightItalic-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-LightItalic-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-LightItalic-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-LightItalic-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Regular-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Regular-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Regular-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Regular-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Semibold-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Semibold-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Semibold-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-Semibold-webfont.woff" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-SemiboldItalic-webfont.eot" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-SemiboldItalic-webfont.svg" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-SemiboldItalic-webfont.ttf" />
+    <Content Include="ClientApp\fonts\OpenSans\OpenSans-SemiboldItalic-webfont.woff" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="3.3.7" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\charts\SsggChart_Bar_A02.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Header.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\NavTopRight.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\NavTopLeft.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\News.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\AmazonIndex.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\AmazonOverview.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\AzureIndex.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\AzureResources.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\AzureSubscriptions.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\charts\SsggChart_Bar_A01.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\CloudComparatives.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\ConsumptionAnalysis.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\ExpenseAnalysis.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\GCloudIndex.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\GCloudOverview.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\GeneralPosition.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\GSuiteIndex.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\GSuiteOverview.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\ManagementAnalysis.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\Office365Applications.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\Office365Index.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\Office365Licenses.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\panels\Office365Overview.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\fondos\invdg_img_serv_azure_a.png" />
+    <None Include="wwwroot\img\fondos\invdg_img_serv_backplus_a.png" />
+    <None Include="wwwroot\img\fondos\invdg_img_serv_cloud_a.png" />
+    <None Include="wwwroot\img\fondos\invdg_img_serv_cloud_b.png" />
+    <None Include="wwwroot\img\fondos\invdg_img_serv_cloud_c.png" />
+    <None Include="wwwroot\img\fondos\invdg_img_serv_dynamics_a.png" />
+    <None Include="wwwroot\img\fondos\invdg_img_serv_o365_a.png" />
+    <None Include="wwwroot\img\gifs\invdg_desarrollo.gif" />
+    <None Include="wwwroot\img\gifs\loading.gif" />
+    <None Include="wwwroot\img\iconos\invdg_btn_alert_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_nube_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_nube_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_nube_c.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_nube_d.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_in_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_in_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_in_c.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_in_d.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_out_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_out_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_out_c.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_pbi_out_d.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_0365_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_0365_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_azure_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_azure_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_backuplus_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_backuplus_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_cac_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_cac_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_cloud_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_cloud_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_comseg_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_comseg_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_dyn_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_btn_serv_dyn_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_azure_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_backuplus_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_buscar_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_cac_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_cloud_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_comseg_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_dynamics_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_excel2016_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_excel365_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_inicio_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_innovadag_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_lang_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_noticias_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_office365_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_pbi_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_rayas_a.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_rayas_b.png" />
+    <None Include="wwwroot\img\iconos\invdg_ico_usuario_a.png" />
+    <None Include="wwwroot\img\logos\invdg_logos_emov_01.png" />
+    <None Include="wwwroot\img\logos\invdg_logos_gacgroup_01.png" />
+    <None Include="wwwroot\img\logos\invdg_logos_tragsa_01.png" />
+    <None Include="wwwroot\img\logos\invdg_logo_header_a.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="App_GlobalResources\Gen.language.designer.cs">
+      <DependentUpon>Gen.language.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="App_GlobalResources\Graphics.language.designer.cs">
+      <DependentUpon>Graphics.language.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="App_GlobalResources\Mnu.language.designer.cs">
+      <DependentUpon>Mnu.language.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="App_GlobalResources\Monitoring.language.designer.cs">
+      <DependentUpon>Monitoring.language.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="App_GlobalResources\Monitoring_Acces.language.designer.cs">
+      <DependentUpon>Monitoring_Acces.language.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="App_GlobalResources\Services.language.designer.cs">
+      <DependentUpon>Services.language.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="App_GlobalResources\Serv_Cloud.language.designer.cs">
+      <DependentUpon>Serv_Cloud.language.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+
+    <!-- In development, the dist files won't exist on the first run or when cloning to
+         a different machine, so rebuild them if not already present. -->
+    <Message Importance="high" Text="Performing first-run Webpack build..." />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec Command="npm install" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --env.prod" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

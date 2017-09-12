@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_Tab_Azure_Subc_b" xml:space="preserve">
+    <value>Graficos Suscripciones de Azure B</value>
+  </data>
+  <data name="Data_Azure_Reso_title_01" xml:space="preserve">
+    <value>Area de Analisis en funcion de los grupos de recursos</value>
+  </data>
+  <data name="_Tab_Azure_Reso_a" xml:space="preserve">
+    <value>Graficos Recursos de Azure A</value>
+  </data>
+  <data name="_Tab_Azure_Reso_b" xml:space="preserve">
+    <value>Graficos Recursos de Azure B</value>
+  </data>
+  <data name="_Tab_Azure_Reso_c" xml:space="preserve">
+    <value>Graficos Recursos de Azure C</value>
+  </data>
+  <data name="_Tab_Azure_Subc_a" xml:space="preserve">
+    <value>Graficos Suscripciones de Azure A</value>
+  </data>
+  <data name="_Mnu_Nav_Azure_a" xml:space="preserve">
+    <value>Azure Cloud </value>
+  </data>
+  <data name="_Mnu_Nav_Azure_Subc_a" xml:space="preserve">
+    <value>Suscripciones</value>
+  </data>
+  <data name="_Mnu_Nav_Azure_Reso_a" xml:space="preserve">
+    <value>Grupos de Recursos</value>
+  </data>
+  <data name="_Mnu_Nav_Office_a" xml:space="preserve">
+    <value>Office 365</value>
+  </data>
+  <data name="_Mnu_Nav_Office_Apl_a" xml:space="preserve">
+    <value>Aplicaciones</value>
+  </data>
+  <data name="_Mnu_Nav_Office_Lic_a" xml:space="preserve">
+    <value>Licencias</value>
+  </data>
+  <data name="_Mnu_Nav_Amazon_a" xml:space="preserve">
+    <value>Amazon Web Services</value>
+  </data>
+  <data name="_Mnu_Nav_Google_a" xml:space="preserve">
+    <value>Google Cloud</value>
+  </data>
+  <data name="_Mnu_Nav_GSuite_a" xml:space="preserve">
+    <value>G-Suite</value>
+  </data>
+  <data name="_Mnu_Nav_Pos_Gen_a" xml:space="preserve">
+    <value>Posicion General</value>
+  </data>
+  <data name="_Mnu_Nav_AnlComp_a" xml:space="preserve">
+    <value>Analiticas Comparativas</value>
+  </data>
+  <data name="_Tab_Azure_Subc_c" xml:space="preserve">
+    <value>Graficos Suscripciones de Azure C</value>
+  </data>
+  <data name="_Tab_Pos_Gen_a" xml:space="preserve">
+    <value>Area de visualizacion de datos generales del cliente</value>
+  </data>
+  <data name="Data_Office_Apl_title_01" xml:space="preserve">
+    <value>Area de Datos Office 365, Analisis por aplicaciones</value>
+  </data>
+  <data name="_Tab_Office_Apl_a" xml:space="preserve">
+    <value>Graficos Aplicaciones Office 365 A</value>
+  </data>
+  <data name="_Tab_Office_Apl_b" xml:space="preserve">
+    <value>Graficos Aplicaciones Office 365 B</value>
+  </data>
+  <data name="_Tab_Office_Apl_c" xml:space="preserve">
+    <value>Graficos Aplicaciones Office 365 C</value>
+  </data>
+  <data name="_Tab_Office_Lic_a" xml:space="preserve">
+    <value>Graficos Licencias Office 365 A</value>
+  </data>
+  <data name="_Tab_Office_Lic_b" xml:space="preserve">
+    <value>Graficos Licencias Office 365 B</value>
+  </data>
+  <data name="_Tab_Office_Lic_c" xml:space="preserve">
+    <value>Graficos Licencias Office 365 C</value>
+  </data>
+  <data name="Data_AnlManag_title_01" xml:space="preserve">
+    <value>Area de Graficos Analitica de Gestion Empresarial</value>
+  </data>
+  <data name="_Tab_AnlManag_a" xml:space="preserve">
+    <value>Graficos Analitica Gestion Empresarial A</value>
+  </data>
+  <data name="_Tab_AnlManag_b" xml:space="preserve">
+    <value>Graficos Analitica Gestion Empresarial B</value>
+  </data>
+  <data name="_Tab_AnlManag_c" xml:space="preserve">
+    <value>Graficos Analitica Gestion Empresarial C</value>
+  </data>
+  <data name="Data_AnlComp_Exp_title_01" xml:space="preserve">
+    <value>Area Analitica Comparativa de Proveedores. Gastos / Costes</value>
+  </data>
+  <data name="_Tab_AnlComp_Exp_a" xml:space="preserve">
+    <value>Graficos Analitica Comparativa Gastos / Costes A</value>
+  </data>
+  <data name="_Tab_AnlComp_Exp_b" xml:space="preserve">
+    <value>Graficos Analitica Comparativa Gastos / Costes B</value>
+  </data>
+  <data name="_Tab_AnlComp_Exp_c" xml:space="preserve">
+    <value>Graficos Analitica Comparativa Gastos / Costes C</value>
+  </data>
+  <data name="_Tab_AnlComp_Cons_a" xml:space="preserve">
+    <value>Graficos Analitica Comparativa A. Usos / Consumos</value>
+  </data>
+  <data name="_Tab_AnlComp_Cons_b" xml:space="preserve">
+    <value>Graficos Analitica Comparativa B. Usos / Consumos</value>
+  </data>
+  <data name="_Tab_AnlComp_Cons_c" xml:space="preserve">
+    <value>Graficos Analitica Comparativa C. Usos / Consumos</value>
+  </data>
+  <data name="Data_Amazon_Gen_title_01" xml:space="preserve">
+    <value>Area de Datos Amozon Web Services</value>
+  </data>
+  <data name="_Tab_Amazon_a" xml:space="preserve">
+    <value>Graficos Amazon Web Services A</value>
+  </data>
+  <data name="_Tab_Amazon_b" xml:space="preserve">
+    <value>Graficos Amazon Web Services B</value>
+  </data>
+  <data name="_Tab_Amazon_c" xml:space="preserve">
+    <value>Graficos Amazon Web Services C</value>
+  </data>
+  <data name="_Tab_Amazon_d" xml:space="preserve">
+    <value>Graficos Amazon Web Services D</value>
+  </data>
+  <data name="Data_Google_Gen_title_01" xml:space="preserve">
+    <value>Area de Datos Google Cloud</value>
+  </data>
+  <data name="_Tab_Google_a" xml:space="preserve">
+    <value>Graficos Google Cloud A</value>
+  </data>
+  <data name="_Tab_Google_b" xml:space="preserve">
+    <value>Graficos Google Cloud B</value>
+  </data>
+  <data name="_Tab_Google_c" xml:space="preserve">
+    <value>Graficos Google Cloud C</value>
+  </data>
+  <data name="_Tab_Google_d" xml:space="preserve">
+    <value>Graficos Google Cloud D</value>
+  </data>
+  <data name="Data_GSuite_Gen_title_01" xml:space="preserve">
+    <value>Area de Datos G-Suite</value>
+  </data>
+  <data name="_Tab_GSuite_a" xml:space="preserve">
+    <value>Graficos G-Suite A</value>
+  </data>
+  <data name="_Tab_GSuite_b" xml:space="preserve">
+    <value>Graficos G-Suite B</value>
+  </data>
+  <data name="_Tab_GSuite_c" xml:space="preserve">
+    <value>Graficos G-Suite C</value>
+  </data>
+  <data name="_Tab_GSuite_d" xml:space="preserve">
+    <value>Graficos G-Suite D</value>
+  </data>
+  <data name="_Mnu_Nav_AnlManag_a" xml:space="preserve">
+    <value>Analitica de Gestion Empresarial</value>
+  </data>
+  <data name="_Mnu_Nav_AnlComp_Exp_a" xml:space="preserve">
+    <value>Comparativas de Gastos / Costes</value>
+  </data>
+  <data name="_Mnu_Nav_AnlComp_Cons_a" xml:space="preserve">
+    <value>Comparativa de Consumo / Usos</value>
+  </data>
+  <data name="Data_Azure_Subc_title_01" xml:space="preserve">
+    <value>Area de Analisis en funcion de las suscripciones</value>
+  </data>
+  <data name="Data_Office_Lic_title_01" xml:space="preserve">
+    <value>Area de Datos Office 365, Analisis por licencias</value>
+  </data>
+  <data name="Data_Pos_Gen_title_01" xml:space="preserve">
+    <value>Area de visualizacion de datos generales del cliente</value>
+  </data>
+  <data name="Data_AnlComp_Cons_title_01" xml:space="preserve">
+    <value>Area Analitica Comparativa de Proveedores. Usos / Consumos</value>
+  </data>
+</root>

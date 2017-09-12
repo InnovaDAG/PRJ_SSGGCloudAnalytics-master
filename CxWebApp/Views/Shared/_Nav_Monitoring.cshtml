@@ -1,0 +1,102 @@
+﻿<div class="invdg_contenedor_menu_navlat">
+    <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Gen_Position", "Data_Gen_Position", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_Pos_Gen_a</button>
+
+    <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Management_Analysis", "Data_Management_Analysis", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_AnlManag_a</button>
+
+    <div class="panel-group accordion active" id="menu-datos">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#menu-datos" href="#menu-azure">@Resources.Monitoring.language._Mnu_Nav_Azure_a</a>
+                </h4>
+            </div>
+            <div id="menu-azure" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Azure_Subscriptions", "Data_Azure", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_Azure_Subc_a</button>
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Azure_Resources", "Data_Azure", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_Azure_Reso_a</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#menu-datos" href="#menu-office365">@Resources.Monitoring.language._Mnu_Nav_Office_a</a>
+                </h4>
+            </div>
+            <div id="menu-office365" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Office_Applications", "Data_Office", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_Office_Apl_a</button>
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Office_Licenses", "Data_Office", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_Office_Lic_a</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#menu-datos" href="#menu-amazon">@Resources.Monitoring.language._Mnu_Nav_Amazon_a</a>
+                </h4>
+            </div>
+            <div id="menu-amazon" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Amazon_General", "Data_Amazon", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_Amazon_a</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#menu-datos" href="#menu-googlecloud">@Resources.Monitoring.language._Mnu_Nav_Google_a</a>
+                </h4>
+            </div>
+            <div id="menu-googlecloud" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Google_General", "Data_Google", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_Google_a</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#menu-datos" href="#menu-gsuite">@Resources.Monitoring.language._Mnu_Nav_GSuite_a</a>
+                </h4>
+            </div>
+            <div id="menu-gsuite" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_GSuite_General", "Data_GSuite", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_GSuite_a</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#menu-datos" href="#menu-comparativa">@Resources.Monitoring.language._Mnu_Nav_AnlComp_a</a>
+                </h4>
+            </div>
+            <div id="menu-comparativa" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Expense_Analysis", "Data_Comparative_Analysis", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_AnlComp_Exp_a</button>
+                        <button type="button" class="btn_nav_lateral btn_nav_clase_a" onclick="location.href='@Url.Action("Data_Area_Consumption_Analysis", "Data_Comparative_Analysis", new { area = "" }, null)'">@Resources.Monitoring.language._Mnu_Nav_AnlComp_Cons_a</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
