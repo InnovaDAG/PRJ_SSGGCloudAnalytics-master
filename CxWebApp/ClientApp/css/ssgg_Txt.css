@@ -52,6 +52,50 @@
     padding: 0;
 }
 
+/*--------------------------TEXTOS ALERT --------------------------*/
+.ssgg_contenedor_alert h1 {
+    font-family: 'OpenSans-Regular-webfont';
+    line-height: 20px;
+    font-weight: 100;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 0;
+    padding: 2px;
+}
+
+.ssgg_contenedor_alert h2 {
+    font-family: 'OpenSans-Regular-webfont';
+    line-height: 16px;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 2px;
+    padding: 0;
+}
+
+/*--------------------------TEXTOS PANEL--------------------------*/
+
+.ssgg_contenedor_panel h1 {
+    font-family: 'OpenSans-Light-webfont';
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2px;
+    padding: 0;
+}
+
+.ssgg_contenedor_panel h2 {
+    font-family: 'OpenSans-Regular-webfont';
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+}
+
+
 
 
 

@@ -8,8 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\Alert.tsx" />
     <None Remove="ClientApp\components\AzureOvrvw.tsx" />
     <None Remove="ClientApp\components\charts\SsggChart_Bar_A02.tsx" />
+    <None Remove="ClientApp\components\charts\SsggChart_Line_A01.tsx" />
     <None Remove="ClientApp\components\Counter.tsx" />
     <None Remove="ClientApp\components\FetchData.tsx" />
     <None Remove="ClientApp\components\Header.tsx" />
@@ -432,6 +434,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\Alert.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\charts\SsggChart_Line_A01.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\charts\SsggChart_Pie_A03.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\charts\SsggChart_Pie_A02.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\charts\SsggChart_Pie_A01.tsx" />
     <TypeScriptCompile Include="ClientApp\components\charts\SsggChart_Bar_A02.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Header.tsx" />
     <TypeScriptCompile Include="ClientApp\components\NavTopRight.tsx" />

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { NavMenu } from './NavMenu';
 import { Header } from './Header';
+import { Alert } from './Alert';
 
 export interface LayoutProps {
     children?: React.ReactNode;
@@ -32,12 +33,10 @@ export class Layout extends React.Component<LayoutProps, {}> {
                 <Header />
             </div>
             <div className='row container-fluid ssgg_contenedor_body'>
-                <div className='ssgg_contenedor_01 col-xs-12 col-sm-3 col-md-3 col-lg-2'>
+                <div className='col-xs-12 col-sm-3 col-md-3 col-lg-2'>
                     <NavMenu />
-
-
                 </div>
-                <div className='ssgg_contenedor_01 col-xs-12 col-sm-9 col-md-9 col-lg-10'>
+                <div className='col-xs-12 col-sm-9 col-md-9 col-lg-10'>
                         {this.props.children}
                 </div>
             </div>
@@ -47,6 +46,3 @@ export class Layout extends React.Component<LayoutProps, {}> {
     }
 }
 
-//<div className='container'>
-//    <NavTop />
-//</div>
